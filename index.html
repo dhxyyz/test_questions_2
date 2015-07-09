@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>建模语言理论测试</title>
+        <script src = 'jquery-1.11.3.js'></script>
+        <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script src = './bower_components/jquery/dist/jquery.js'></script>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p class="text-justify">西安欧亚学院</p><hr>
+                    <h1 class="text-center">统一建模语言理论测试</h1>
+                </div>
+            </div>
+
+            <form class="form-inline" action="results" method="post">
+                <div class="panel panel-default text-center">
+                    <div class="form-group">
+                        <label for="subjects">科目：</label>
+                        <input type="text" class="form-control" id="subjects" value="统一建模语言 UML" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">时间：</label>
+                        <input type="text" class="form-control" id="time" value="100分钟" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="score">得分：</label>
+                        <input type="text" class="form-control" id="score" value="" readonly>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="grade">班级：</label>
+                        <input type="text" class="form-control" id="grade" placeholder="班级"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student_id">学号：</label>
+                        <input type="text" class="form-control" id="student_id" placeholder="学号"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student">姓名：</label>
+                        <input type="text" class="form-control" id="student" placeholder="姓名"required>
+                    </div><br>
+                    <br>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h4>一、填空题（每空1分，共30分）</h4></div>
+                    <div class="panel-body">
+
+                    </div>
+
+
+                    <div class="panel-heading"><h4>二、选择题（每空2分，共20分）</h4></div>
+                    <div class="panel-body">
+                        <p>...</p>
+                    </div>
+                        <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                    </label>
+                        <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                    </label>
+                        <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                    </label>
+
+                    <div class="panel-heading"><h4>三、多选题（每空5分，共10分）</h4></div>
+                    <div class="panel-body">
+                        <p>...</p>
+                    </div>
+
+
+                    <div class="panel-heading"><h4>四、判断题（每空2分，共20分）</h4></div>
+                    <div class="panel-body">
+                        <p>...</p>
+                    </div>
+
+                    <div class="panel-heading"><h4>五、简答题（每题4分，共20分）</h4></div>
+                    <div class="panel-body">
+                        <p>...</p>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <input id = 'submit' type="button" name="submit" value="提交">
+                <button id = 'submit' type="button" class="btn btn-primary btn-lg">提交</button>
+            </form>
+
+
+
+
+
+
+
+        <form class="form-inline" action="results" method="post">
+            <div class="">
+                <div class="form-group">
+                    考试科目：<input type="text"  name="subjects" value="统一建模语言 UML" readonly>
+                    时&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp间：<input type="text" name="time" value="100分钟"readonly=''>
+                    得&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp分：<input type="text" id="score" name="score" value='' readonly><br>
+                    班&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp级：<input type="text" name="grade" value=""required="required">
+                    学&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp号：<input type="text" name="student_id" value=""required="required">
+                    姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：<input type="text" name="student" value="" required="required">
+                </div>
+
+                <p>
+                    <h4>一、填空题（每空1分，共30分）</h4>
+                    1、UML的中文全称是：
+                    <input type="text" name="Completion_01" value=""><br>
+                    2、面向对象最突出的特征是：
+                    <input type="text" name="Completion_02" value="">
+                    <input type="text" name="Completion_02" value="">
+                    <input type="text" name="Completion_02" value="">
+                </p>
+
+                <p>
+                    <h4>二、选择题（每空2分，共20分）</h4>
+                    1，UML与软件工程的关系是： <br>
+                    <input type="radio" name="choose_01" value="A">（A）UML就是软件工程<br>
+                    <input type="radio" name="choose_01" value="B">（B）UML参与到软件工程中软件开发过程的几个阶段<br>
+                    <input type="radio" name="choose_01" value="C">（C）UML与软件工程无关<br>
+                    <input type="radio" name="choose_01" value="D">（D）UML是软件工程的一部分<br>
+                    2、Java语言支持： <br>
+                    <input type="radio" name="choose_02" value="A">（A）单继承<br>
+                    <input type="radio" name="choose_02" value="B">（B）多继承<br>
+                    <input type="radio" name="choose_02" value="C">（C）单继承和多继承都支持<br>
+                    <input type="radio" name="choose_02" value="D">（D）单继承和多继承都不支持<br>
+                </p>
+
+                <p>
+                    <h4>三、多选题（每空5分，共10分）</h4>
+                    1、用例的粒度分为一下哪几种。 <br>
+                    <input type="checkbox" name="more_choose_01" value="A">（A）概述级<br>
+                    <input type="checkbox" name="more_choose_01" value="B">（B）需求级<br>
+                    <input type="checkbox" name="more_choose_01" value="C">（C）用户目标级<br>
+                    <input type="checkbox" name="more_choose_01" value="D">（D）子功能级<br>
+                    2、类图由以下哪三部分组成。 <br>
+                    <input type="checkbox" name="more_choose_02" value="A">（A）名称（Name）<br>
+                    <input type="checkbox" name="more_choose_02" value="B">（B）属性（Attribute）<br>
+                    <input type="checkbox" name="more_choose_02" value="C">（C）操作（Operation）<br>
+                    <input type="checkbox" name="more_choose_02" value="D">（D）方法Function<br>
+                </p>
+
+                <p>
+                    <h4>四、判断题（每空2分，共20分）</h4>
+                    1、用例图只是用于和客户交流和沟通的，用于确定需求。
+                    Y<input type="radio" name="judge_01" value="Y">
+                    N<input type="radio" name="judge_01" value="N"><br>
+                    2、在状态图中，终止状态的一个状态图中允许有任意多个。
+                    Y<input type="radio" name="judge_02" value="Y">
+                    N<input type="radio" name="judge_02" value="N"><br>
+                </p>
+
+                <p>
+                    <h4>五、简答题（每题4分，共20分）</h4>
+                    1，简述什么是模型，以及模型的表现形式。 <br>
+                    <textarea name="name" rows="4" cols="50" value></textarea>
+
+                </p>
+
+                <input id = 'submit' type="button" name="submit" value="提交">
+                <input id = 'reset' type="reset" name="reset" value="重置">
+            </form>
+        </div>
+        <script src = './test.js'></script>
+
+    </body>
+</html>
